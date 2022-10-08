@@ -23,3 +23,15 @@ else:
        n1 = n2
        n2 = nth
        cnt += 1
+
+# So Fibonacci Sequence is what we know a sequence where every term 
+# is the sum of preceding two terms (Except first two terms : 0 and 1)
+# So here we implement this program by using 3 simple conditions : 
+# 1. If the input terms is less or than equal 0, we output this as wrong input
+# 2. If the input is 1 , we output the the first term i.e. n1
+# 3. Other wise, 
+#              we use n1 and n2 repeatedly until cnt < n 
+#              print n1 which is the next term in the sequence
+#              store n1 + n2 in nth
+#              and update the n1 and n2 as the last two terms accordingly i.e. with n2 and nth
+#              update cnt by adding 1. 
